@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497642651F8FCBA2003723B7 /* AndrewCopeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497642641F8FCBA2003723B7 /* AndrewCopeVC.swift */; };
 		49ABEBFF1F81E69A00AF8B2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABEBFE1F81E69A00AF8B2D /* AppDelegate.swift */; };
 		49ABEC011F81E69A00AF8B2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABEC001F81E69A00AF8B2D /* ViewController.swift */; };
 		49ABEC041F81E69A00AF8B2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49ABEC021F81E69A00AF8B2D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		497642641F8FCBA2003723B7 /* AndrewCopeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndrewCopeVC.swift; sourceTree = "<group>"; };
 		49ABEBFB1F81E69A00AF8B2D /* DCSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49ABEBFE1F81E69A00AF8B2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49ABEC001F81E69A00AF8B2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				49ABEBFE1F81E69A00AF8B2D /* AppDelegate.swift */,
 				49ABEC001F81E69A00AF8B2D /* ViewController.swift */,
 				49ABEC021F81E69A00AF8B2D /* Main.storyboard */,
+				497642641F8FCBA2003723B7 /* AndrewCopeVC.swift */,
 				49ABEC051F81E69A00AF8B2D /* Assets.xcassets */,
 				49ABEC071F81E69A00AF8B2D /* LaunchScreen.storyboard */,
 				49ABEC0A1F81E69A00AF8B2D /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				49ABEC011F81E69A00AF8B2D /* ViewController.swift in Sources */,
 				49ABEBFF1F81E69A00AF8B2D /* AppDelegate.swift in Sources */,
+				497642651F8FCBA2003723B7 /* AndrewCopeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
