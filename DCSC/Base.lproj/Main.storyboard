@@ -156,7 +156,7 @@
         <!--Check In-->
         <scene sceneID="N6h-wO-LUs">
             <objects>
-                <viewController id="4LM-1b-rD6" sceneMemberID="viewController">
+                <viewController id="4LM-1b-rD6" customClass="CheckInViewController" customModule="DCSC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DNG-Me-Iha">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,6 +193,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="nameUpdated:" destination="GCa-lR-4of" eventType="editingChanged" id="e57-p0-jm2"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oxs-Qk-dpU">
                                         <rect key="frame" x="63.5" y="85" width="223.5" height="30"/>
@@ -207,6 +210,10 @@
                                         <rect key="frame" x="8" y="147" width="297" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitPressed:" destination="4LM-1b-rD6" eventType="touchUpInside" id="Wz6-Jf-pdj"/>
+                                            <action selector="submitPressed:" destination="GCa-lR-4of" eventType="touchUpInside" id="eHr-4O-R7D"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -252,8 +259,14 @@
                         <viewLayoutGuide key="safeArea" id="Bi1-D8-7HT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Check In" id="WSN-PI-ioN"/>
+                    <connections>
+                        <outlet property="emailField" destination="oxs-Qk-dpU" id="VOU-1n-v2D"/>
+                        <outlet property="nameField" destination="MVd-Jw-kqb" id="Ox7-WF-Wuu"/>
+                        <outlet property="statusLabel" destination="cFm-cl-WnV" id="G7x-sD-GKq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBm-Th-ymt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GCa-lR-4of" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-242.40000000000001" y="-263.11844077961024"/>
         </scene>

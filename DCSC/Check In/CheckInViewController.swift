@@ -9,43 +9,46 @@
 import UIKit
 
 struct CheckInSubmission {
-    var string:String?;
-    var email:String?;
+    var name:String?
+    var email:String?
     
-    func validate(email:String?) -> Bool {
+    func isValid() -> Bool {
+        return validateEmail(email: email)
+    }
+    
+    func validateEmail(email:String?) -> Bool {
         if let e = email {
             if !e.contains("@") { return false }
             if !e.contains(".") { return false }
-        } else {
-            return false;
+            return true
         }
-        return true
-    }
-    
-    func validate(name:String?) -> Bool {
-        if let n = name {
-            if !n.contains(" ") { return false }
-        } else {
-            return false
-        }
-        
-        return true
+        return false
     }
 }
 
-class CheckInViewController: UIViewController {
 
+class CheckInViewController:UIViewController {
     
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var nameField: UITextField!
+    
+    @IBOutlet weak var emailField: UITextField!
+    
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    @IBAction func submitPressed(_ sender: Any) {
+        
+        let name = nameField.text
+        let email = emailField.text
+        
+        let submission = CheckInSubmission(name: name, email: email)
+        
+        if submission.isValid() {
+            statusLabel.text = "YESSSSSS"
+        } else {
+            statusLabel.text = "YOU LOSER, TYPE IN AN EMAIL"
+        }
     }
-    */
-
+    
+    
 }
