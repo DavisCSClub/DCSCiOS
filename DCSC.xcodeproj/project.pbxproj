@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4976426A1F9070FC003723B7 /* AndrewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497642691F9070FC003723B7 /* AndrewViewController.swift */; };
+		497642711F995434003723B7 /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497642701F995434003723B7 /* CheckInViewController.swift */; };
 		49ABEBFF1F81E69A00AF8B2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABEBFE1F81E69A00AF8B2D /* AppDelegate.swift */; };
 		49ABEC011F81E69A00AF8B2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABEC001F81E69A00AF8B2D /* ViewController.swift */; };
 		49ABEC041F81E69A00AF8B2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49ABEC021F81E69A00AF8B2D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		497642691F9070FC003723B7 /* AndrewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndrewViewController.swift; sourceTree = "<group>"; };
+		497642701F995434003723B7 /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 		49ABEBFB1F81E69A00AF8B2D /* DCSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49ABEBFE1F81E69A00AF8B2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49ABEC001F81E69A00AF8B2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		497642741F995447003723B7 /* Check In */ = {
+			isa = PBXGroup;
+			children = (
+				497642701F995434003723B7 /* CheckInViewController.swift */,
+			);
+			path = "Check In";
+			sourceTree = "<group>";
+		};
 		49ABEBF21F81E69A00AF8B2D = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 				49ABEBFE1F81E69A00AF8B2D /* AppDelegate.swift */,
 				49ABEC001F81E69A00AF8B2D /* ViewController.swift */,
 				49ABEC021F81E69A00AF8B2D /* Main.storyboard */,
+				497642741F995447003723B7 /* Check In */,
 				497642691F9070FC003723B7 /* AndrewViewController.swift */,
 				49ABEC051F81E69A00AF8B2D /* Assets.xcassets */,
 				49ABEC071F81E69A00AF8B2D /* LaunchScreen.storyboard */,
@@ -141,6 +152,7 @@
 			files = (
 				49ABEC011F81E69A00AF8B2D /* ViewController.swift in Sources */,
 				4976426A1F9070FC003723B7 /* AndrewViewController.swift in Sources */,
+				497642711F995434003723B7 /* CheckInViewController.swift in Sources */,
 				49ABEBFF1F81E69A00AF8B2D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
