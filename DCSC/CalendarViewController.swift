@@ -11,11 +11,15 @@ import UIKit
 struct Event {
     var title = "Event Title"
     var date = Date()
+    
+    init(title:String) {
+        self.title = title
+    }
 }
 
 class CalendarViewController: UITableViewController {
 
-    var events = [Event(), Event(), Event(), Event(), Event()]
+    var events = [Event(title:"Brainteasers!!!"), Event(title:"Classes Preview"), Event(title:"Gender Diversity")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +28,7 @@ class CalendarViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
         
     }
 
@@ -50,7 +54,7 @@ class CalendarViewController: UITableViewController {
 
         let event = events[indexPath.row]
         cell.textLabel?.text = event.title
-        cell.detailTextLabel?.text = event.date
+        cell.detailTextLabel?.text = "Oct 26th"
 
         return cell
     }
@@ -64,17 +68,17 @@ class CalendarViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            events.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -91,14 +95,19 @@ class CalendarViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+       
+        if let destination = segue.destination as? EventViewController {
+            
+            let selectedRow = tableView.indexPathForSelectedRow!.row
+            destination.event = events[selectedRow]
+        }
     }
-    */
+ 
 
 }
