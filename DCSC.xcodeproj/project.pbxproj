@@ -73,12 +73,9 @@
 				49ABEBFE1F81E69A00AF8B2D /* AppDelegate.swift */,
 				49ABEC001F81E69A00AF8B2D /* ViewController.swift */,
 				49ABEC021F81E69A00AF8B2D /* Main.storyboard */,
-<<<<<<< HEAD
 				491092C01FA2DFA800052CDB /* EventViewController.swift */,
 				491092BE1FA2DBDB00052CDB /* CalendarViewController.swift */,
-=======
 				497642741F995447003723B7 /* Check In */,
->>>>>>> a2e15997abeba7914821196ee201d9cfa244e274
 				497642691F9070FC003723B7 /* AndrewViewController.swift */,
 				49ABEC051F81E69A00AF8B2D /* Assets.xcassets */,
 				49ABEC071F81E69A00AF8B2D /* LaunchScreen.storyboard */,
