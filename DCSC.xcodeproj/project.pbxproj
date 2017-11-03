@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		491092BF1FA2DBDB00052CDB /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491092BE1FA2DBDB00052CDB /* CalendarViewController.swift */; };
 		491092C11FA2DFA800052CDB /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491092C01FA2DFA800052CDB /* EventViewController.swift */; };
+		4916533B1FAC1738005521E8 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916533A1FAC1738005521E8 /* AnimationViewController.swift */; };
+		4916533D1FAC192A005521E8 /* SmileyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916533C1FAC192A005521E8 /* SmileyView.swift */; };
 		4976426A1F9070FC003723B7 /* AndrewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497642691F9070FC003723B7 /* AndrewViewController.swift */; };
 		497642711F995434003723B7 /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497642701F995434003723B7 /* CheckInViewController.swift */; };
 		49ABEBFF1F81E69A00AF8B2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABEBFE1F81E69A00AF8B2D /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		491092BE1FA2DBDB00052CDB /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		491092C01FA2DFA800052CDB /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		4916533A1FAC1738005521E8 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		4916533C1FAC192A005521E8 /* SmileyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileyView.swift; sourceTree = "<group>"; };
 		497642691F9070FC003723B7 /* AndrewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndrewViewController.swift; sourceTree = "<group>"; };
 		497642701F995434003723B7 /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 		49ABEBFB1F81E69A00AF8B2D /* DCSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +77,8 @@
 				49ABEBFE1F81E69A00AF8B2D /* AppDelegate.swift */,
 				49ABEC001F81E69A00AF8B2D /* ViewController.swift */,
 				49ABEC021F81E69A00AF8B2D /* Main.storyboard */,
+				4916533C1FAC192A005521E8 /* SmileyView.swift */,
+				4916533A1FAC1738005521E8 /* AnimationViewController.swift */,
 				491092C01FA2DFA800052CDB /* EventViewController.swift */,
 				491092BE1FA2DBDB00052CDB /* CalendarViewController.swift */,
 				497642741F995447003723B7 /* Check In */,
@@ -157,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				491092C11FA2DFA800052CDB /* EventViewController.swift in Sources */,
+				4916533D1FAC192A005521E8 /* SmileyView.swift in Sources */,
 				491092BF1FA2DBDB00052CDB /* CalendarViewController.swift in Sources */,
+				4916533B1FAC1738005521E8 /* AnimationViewController.swift in Sources */,
 				49ABEC011F81E69A00AF8B2D /* ViewController.swift in Sources */,
 				4976426A1F9070FC003723B7 /* AndrewViewController.swift in Sources */,
 				497642711F995434003723B7 /* CheckInViewController.swift in Sources */,
